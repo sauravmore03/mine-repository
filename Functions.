@@ -3,7 +3,8 @@
 
 
 
-sum(int num1, int num2){
+sum(int num1, int num2)
+{
    int num3 = num1+num2; 
    return num3;
 }
@@ -11,6 +12,11 @@ sum(int num1, int num2){
 int main()
 {
    
-   cout<<sum(1,99);
+   cout<<sum(3,4);
    return 0;
+}
+int sum(int num1, int num2)
+{
+   int num3 = num1+num2;
+   return num3;
 }
