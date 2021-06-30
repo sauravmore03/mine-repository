@@ -1,22 +1,44 @@
 #include <iostream>
+using namespace std;
+ 
 
-
-
-
-sum(int num1, int num2)
-{
-   int num3 = num1+num2; 
-   return num3;
-}
-
-int main()
-{
+int max(int num1, int num2);
+ 
+int main () {
    
-   cout<<sum(3,4);
+   int a = 27;
+   int b = 42;
+   int ret;
+ 
+   
+   ret = max(a, b);
+   cout << "Max value is : " << ret << endl;
+ 
    return 0;
 }
-int sum(int num1, int num2)
-{
-   int num3 = num1+num2;
-   return num3;
+ 
+
+int max(int num1, int num2) {
+   
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
 }
+
+
+
+
+
+
+  
+
+
+
+
+
+
