@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+struct student
+{
+    char name[50];
+    int age;
+    char city[50];
+};
+
+int main()
+{
+    student S1;
+    
+    cout << "Enter Full name: ";
+    cin.get(S1.name, 50);
+    cout << "Enter age: ";
+    cin >> S1.age;
+    cout << "Enter city: ";
+    cin >> S1.city;
+
+    cout << "\nDisplaying Information on ID" << endl;
+    cout << "Name: " << S1.name << endl;
+    cout <<"Age: " << S1.age << endl;
+    cout << "city: " << S1.city<<endl;
+
+    return 0;
+}
